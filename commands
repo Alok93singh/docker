@@ -1,0 +1,3 @@
+Docker Commands:
+
+docker build -t <image_tag> .         # If Dockerfile is in different repo then add -f <dockerfile_path>
