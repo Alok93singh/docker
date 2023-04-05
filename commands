@@ -1,3 +1,15 @@
 Docker Commands:
 
-docker build -t <image_tag> .         # If Dockerfile is in different repo then add -f <dockerfile_path>
+docker build -t <image_tag> .                     # If Dockerfile is in different repo then add -f <dockerfile_path>  . is use for same directory.
+docker run -p 3000:80 <image_tag>                 # Mapping port 3000 to 80
+docker run -d  -p 3000:80 <image_tag>             # Run Image in detach mode
+docker exec -it <container_id> bash               # Enter in Container
+docker ps
+docker stop <container_id>
+docker ps -a
+docker kill <hash>
+docker rm <hash>
+docker rm -f hash
+docker rm $(docker ps -a -q)
+docker images -a
+docker rmi <image-tag>
