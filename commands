@@ -13,3 +13,14 @@ docker rm -f hash
 docker rm $(docker ps -a -q)
 docker images -a
 docker rmi <image-tag>
+docker rmi $(docker image -q)
+docker logs <container-id> -f
+docker login
+docker tag <image> username/repository:tag
+docker push username/repository:tag
+docker run username/repository:tag
+docker system prune
+docker system prune -a
+docker volume prune
+docker naetwork prune
+
